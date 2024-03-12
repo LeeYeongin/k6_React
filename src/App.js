@@ -1,14 +1,20 @@
 import './App.css';
 import MainHeader from './01/MainHeader';
+import Hello from './01/Hello';
+
 // component명은 대문자로 작성(일반 html태그와 구분하기 위해서), 함수형으로 작성
 // component는 반드시 return을 가져야함
 function App() {
   return ( // 부모태그 하나밖에 return 못함 -> 추가하고 싶을때, fragment(<></>)로 묶어 사용
     <>
-      <div className="App"> {/* class는 claasName으로 작성*/}
+      <div className="App"> {/* class는 claasName으로 작성(JSX 문법)*/}
         <MainHeader/>
+        <Hello/>
+        <Hello/>
+        <Hello/>
+        <Hello/>
+        <Hello/>
       </div>
-      <div>402호</div>
     </>
   );
 }
