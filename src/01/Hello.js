@@ -14,8 +14,13 @@ function Hello() {
 
     let x;
 
+    const currentTime = new Date();
+
     return(
         <h1>
+            <p>
+                {currentTime.toLocaleTimeString()}
+            </p>
             {/* 표현식은 중괄호 내에 위치 */}
             <span style={st1}>Hello</span> 
             <span style={{display: "inline-flex", margin:"10px"}}>
@@ -35,6 +40,7 @@ function Hello() {
 
             {/* x가 undefined이고 x뿐일때, 오류 발생 -> || 으로 오류 대신 문자 출력 */}
             {/* <p>{x || "x는 undefined입니다."}</p> */}
+
         </h1> 
     );
 }
