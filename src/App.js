@@ -12,8 +12,6 @@ function App() {
         <Hello/>
         <Hello/>
         <Hello/>
-        <Hello/>
-        <Hello/>
       </div>
     </>
   );
