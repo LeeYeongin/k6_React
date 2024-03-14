@@ -1,9 +1,9 @@
 // import './App.css';
-import MyClock from './01_1/MyClock';
+import HelloCss from './02/HelloCss';
 
 function App() {
   return ( 
-    <MyClock/>
+    <HelloCss />
   );
 }
 
