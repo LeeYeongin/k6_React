@@ -6,9 +6,9 @@ import App from './App'; // App.js는 component
 
 const root = ReactDOM.createRoot(document.getElementById('root')); // 가상돔 생성
 root.render( // html태그(사용자 정의 태그)가 return됨
-  <React.StrictMode>
+  // <React.StrictMode>
     <App/>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 /* 
