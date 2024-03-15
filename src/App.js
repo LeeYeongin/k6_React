@@ -1,6 +1,6 @@
 // import './App.css';
 import { FaHome } from "react-icons/fa";
-import MyDiv1 from './03_1/MyDiv1';
+import MyListMain from "./04/MyListMain";
 
 function App() {
   return ( 
@@ -19,8 +19,9 @@ function App() {
         </div>
         <div><FaHome className='text-3xl'/></div>
       </header>
-      <main className='grow flex flex-col justify-center items-center'>
-        <MyDiv1 />
+      <main className='grow flex flex-col justify-center items-center
+                       overscroll-y-auto'>
+        <MyListMain />
       </main>
       <footer className='flex justify-center items-center
                         h-20 bg-slate-700
