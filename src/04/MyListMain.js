@@ -7,7 +7,8 @@ export default function MyListMain() {
         <MyList title = {item.title}
                 imgUrl = {item.imgUrl}
                 content = {item.content}
-                key = {item.title}
+                // 구분할 수 있는 값을 key값으로 사용하기
+                key = {item.title} 
         />
     );
     return (

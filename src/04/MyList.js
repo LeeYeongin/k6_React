@@ -1,4 +1,13 @@
+import { FaHeart } from "react-icons/fa6";
 export default function MyList({ title, imgUrl, content }) {
+    let cnt=0;
+
+    const handleLike = (t) => {
+        console.log('handleLike' + t);
+        cnt = cnt+1;
+        console.log(`cnt = ${cnt}`)
+    }
+    
     return (
         <div className="w-full flex
                         border border-l-slate-300 rounded
@@ -16,9 +25,13 @@ export default function MyList({ title, imgUrl, content }) {
                 <p className="w-full mt-5
                               flex justify-end items-center
                               font-bold">
-                    <span className="text-xl">🧡</span>
+                    <span className="text-xl " 
+                        //  매개변수를 전달할때는 콜백함수 형태로 작성
+                        onClick={() => {handleLike(title)}}> 
+                        <FaHeart className="text-orange-400 hover:text-red-600 hover:cursor-pointer"/>
+                    </span>
                     <span className="mx-2">좋아요</span>
-                    <span>0</span>
+                    <span>{cnt}</span>
                 </p>
             </div>
         </div>
