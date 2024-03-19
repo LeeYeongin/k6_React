@@ -6,14 +6,20 @@ import { CgLoadbar } from "react-icons/cg";
 
 export default function BoxOfficeTb() {
 
+    // state 변수
     const [info, setInfo] = useState();
 
     const handleClick = (i) => {
         console.log(i);
+        // 할당연산자로 state 변수 변경 불가 -> 업데이트함수 변경
+        // info = i;
         setInfo(i)
     }
 
-    const movieList = BoxOfficeData.boxOfficeResult.dailyBoxOfficeList.map(item =>
+    // 영화 목록 json 가져오기
+    const dataList = BoxOfficeData.boxOfficeResult.dailyBoxOfficeList;
+
+    const movieList = dataList.map(item =>
         <tr key={item.movieCd} className='h-10 text-center hover:bg-slate-200 hover:font-bold hover:cursor-pointer' 
                                 onClick={() => {handleClick(item)}}>
             <td>{item.rank}</td>
@@ -52,7 +58,7 @@ export default function BoxOfficeTb() {
                             flex justify-center items-center
                             text-bold text-center 
                             bg-slate-800 text-white'>
-                {info == undefined ? '영화를 선택하세요.'
+                {info === undefined ? '영화를 선택하세요.'
                  : `[${info.movieCd}] ${info.movieNm} -
                     개봉일자 ${info.openDt} -
                     총 누적 관객 수는 ${parseInt(info.audiAcc).toLocaleString()}명 입니다.`}
