@@ -1,6 +1,6 @@
 // import './App.css';
 import { FaHome } from "react-icons/fa";
-import BoxOfficeTb from "./05/BoxOfficeTb";
+import BoxOfficeTb from "./05_1/BoxOfficeTb";
 
 function App() {
   return ( 
