@@ -1,6 +1,6 @@
 // import './App.css';
 import { FaHome } from "react-icons/fa";
-import FoodMain from "./07/FoodMain";
+import MyClock from './08/MyClock.js';
 
 function App() {
   return ( 
@@ -21,7 +21,7 @@ function App() {
       </header>
       <main className='grow flex flex-col justify-center items-center
                        overscroll-y-auto'>
-        <FoodMain/>
+        <MyClock/>
       </main>
       <footer className='flex justify-center items-center
                         min-h-20 bg-slate-700
