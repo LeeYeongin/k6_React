@@ -1,6 +1,6 @@
 // import './App.css';
 import { FaHome } from "react-icons/fa";
-import Lotto from "./06/Lotto";
+import FoodMain from "./07/FoodMain";
 
 function App() {
   return ( 
@@ -21,10 +21,10 @@ function App() {
       </header>
       <main className='grow flex flex-col justify-center items-center
                        overscroll-y-auto'>
-        <Lotto/>
+        <FoodMain/>
       </main>
       <footer className='flex justify-center items-center
-                        h-20 bg-slate-700
+                        min-h-20 bg-slate-700
                         text-white text-base'>
         @ 2024 LeeYeongIn. All right reserved.
       </footer>
