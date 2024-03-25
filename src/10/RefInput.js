@@ -52,10 +52,10 @@ export default function RefInput() {
             <div className='w-full flex
                             justify-center items-center'>
                 <div className='w-1/2 flex justify-center items-center'>
-                    {/* <TailInput type="text" 
-                                ref={inputRef}
-                                ph="값 입력" /> */}
-                    <input type="text"
+                    <TailInput type="text" 
+                                inputRef={inputRef}
+                                ph="값 입력" />
+                    {/* <input type="text"
                         // input의 ref 속성으로 연결
                         ref={inputRef}
                         className="bg-gray-50 border border-gray-300
@@ -63,7 +63,7 @@ export default function RefInput() {
                             focus:ring-blue-500 focus:border-blue-
                             block w-full p-2.5"
                         placeholder="값 입력"
-                    />
+                    /> */}
                 </div>
                 <div className='flex justify-center items-center'>
                     <TailButton caption="등록"
