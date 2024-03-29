@@ -37,7 +37,7 @@ export default function GalleryMain() {
         fetch(url)
         .then(resp => resp.json())
         .then(data => setTdata(data.response.body.items.item)) // console.log(data.response.body.items.item)
-        .then(err => console.log(err));
+        .catch(err => console.log(err));
     }
 
     const handleKeyword = () => {
