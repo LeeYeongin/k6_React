@@ -43,8 +43,8 @@ export default function Lotto() {
     
 
     return (
-        <div className='flex flex-col justify-center items-center w-full h-full'>
-            <div className='flex justify-center items-center'>
+        <div className='flex flex-col justify-center items-center w-9/10 h-full'>
+            <div className='flex justify-center items-center mb-4'>
                 {ballTags}
             </div>
             {/* 같은 TailButton 컴포넌트를 호출하지만 전달받은 함수가 달라 다른 기능 수행 */}
