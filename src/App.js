@@ -9,6 +9,7 @@ import BoxOffice from "./05/BoxOffice";
 import FoodMain from "./07/FoodMain";
 import GalleryMain from "./11/GalleryMain";
 import Festival from "./12/Festival";
+import Frcst from "./14/Frcst";
 
 // import RouteMain from "./13/RouteMain";
 
@@ -29,6 +30,10 @@ function App() {
             리액트실습
           </div>
           <div className="flex justify-end items-center mx-2">
+          <div className="mr-4 p-2 rounded-sm
+                            hover:bg-slate-700 hover:text-white">
+              <Link to='/frcst'>예보</Link>
+            </div>
           <div className="mr-4 p-2 rounded-sm
                             hover:bg-slate-700 hover:text-white">
               <Link to='/festival'>축제</Link>
@@ -66,6 +71,7 @@ function App() {
             <Route path='/food' element={<FoodMain />} />
             <Route path='/gallery' element={<GalleryMain />} />
             <Route path='/festival' element={<Festival />} />
+            <Route path='/frcst' element={<Frcst />} />
           </Routes>
         </main>
         <footer className='flex justify-center items-center
