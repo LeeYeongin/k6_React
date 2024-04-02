@@ -10,6 +10,8 @@ import FoodMain from "./07/FoodMain";
 import GalleryMain from "./11/GalleryMain";
 import Festival from "./12/Festival";
 import Frcst from "./14/Frcst";
+import UltraSrtFcst from "./14/UltraSrtFcst";
+import VilageFcst from "./14/VilageFcst";
 
 // import RouteMain from "./13/RouteMain";
 
@@ -72,6 +74,8 @@ function App() {
             <Route path='/gallery' element={<GalleryMain />} />
             <Route path='/festival' element={<Festival />} />
             <Route path='/frcst' element={<Frcst />} />
+            <Route path='/ultra/:dt/:area/:x/:y' element={<UltraSrtFcst />} />
+            <Route path='/vilage/:dt/:area/:x/:y' element={<VilageFcst />} />
           </Routes>
         </main>
         <footer className='flex justify-center items-center

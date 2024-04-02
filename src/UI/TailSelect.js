@@ -14,7 +14,7 @@ export default function TailSelect({opDefault, selRef, handleSel, ops}) {
                                             text-gray-900 text-sm rounded-lg 
                                             focus:ring-blue-500 focus:border-blue-500 
                                             block p-2.5">
-                <option defaultValue>{opDefault}</option>
+                <option value='' defaultValue>{opDefault}</option>
                 {opTags}
             </select>
     )
