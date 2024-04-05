@@ -23,7 +23,7 @@ export default function TrafficNav({ title, category, sel, setSel }) {
                     교통사고 {title}
                 </h1>
             </div>
-            <div>
+            <div className='flex flex-row'>
                 {bts}
             </div>
         </div>
