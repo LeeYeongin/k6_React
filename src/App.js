@@ -13,6 +13,9 @@ import Frcst from "./14/Frcst";
 import UltraSrtFcst from "./14/UltraSrtFcst";
 import VilageFcst from "./14/VilageFcst";
 import FrcstList from "./14/FrcstList";
+import TrafficMain from "./09/TrafficMain";
+// import Recoil1 from "./15/Recoil1";
+import RecoilMain from "./15/RecoilMain";
 
 // import RouteMain from "./13/RouteMain";
 
@@ -33,15 +36,19 @@ function App() {
             리액트실습
           </div>
           <div className="flex justify-end items-center mx-2">
-          <div className="mr-4 p-2 rounded-sm
+            <div className="mr-4 p-2 rounded-sm
+                            hover:bg-slate-700 hover:text-white">
+              <Link to='/r1'>Recoil</Link>
+            </div>
+            <div className="mr-4 p-2 rounded-sm
                             hover:bg-slate-700 hover:text-white">
               <Link to='/frcst'>예보</Link>
             </div>
-          <div className="mr-4 p-2 rounded-sm
+            <div className="mr-4 p-2 rounded-sm
                             hover:bg-slate-700 hover:text-white">
               <Link to='/festival'>축제</Link>
             </div>
-          <div className="mr-4 p-2 rounded-sm
+            <div className="mr-4 p-2 rounded-sm
                             hover:bg-slate-700 hover:text-white">
               <Link to='/gallery'>사진</Link>
             </div>
@@ -51,12 +58,17 @@ function App() {
             </div>
             <div className="mr-4 p-2 rounded-sm
                             hover:bg-slate-700 hover:text-white">
+              <Link to='/traffic'>교통</Link>
+            </div>
+            <div className="mr-4 p-2 rounded-sm
+                            hover:bg-slate-700 hover:text-white">
               <Link to='/boxoffice'>박스오피스</Link>
             </div>
             <div className="mr-4 p-2 rounded-sm
                             hover:bg-slate-700 hover:text-white">
               <Link to='/lotto'>로또</Link>
             </div>
+
             <div>
               <Link to='/'>
                 <FaHome className='p-2 text-3xl rounded-sm h-11 w-11
@@ -72,12 +84,14 @@ function App() {
             <Route path='/lotto' element={<Lotto />} />
             <Route path='/boxoffice' element={<BoxOffice />} />
             <Route path='/food' element={<FoodMain />} />
+            <Route path='/traffic' element={<TrafficMain />} />
             <Route path='/gallery' element={<GalleryMain />} />
             <Route path='/festival' element={<Festival />} />
             <Route path='/frcst' element={<Frcst />} />
             <Route path='/ultra/:dt/:area/:x/:y' element={<UltraSrtFcst />} />
             <Route path='/vilage/:dt/:area/:x/:y' element={<VilageFcst />} />
             <Route path='/flist' element={<FrcstList />} />
+            <Route path='/r1' element={<RecoilMain />} />
           </Routes>
         </main>
         <footer className='flex justify-center items-center
